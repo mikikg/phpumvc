@@ -1,0 +1,61 @@
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Register</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+      </header>
+
+			<label style='color:red' class="col-sm-6 control-label">##form_error##</label>
+
+			<form class="form-horizontal" role="form" method="post" action="index.php?page=register">
+				<div class="form-group">
+					<label for="name" class="col-sm-2 control-label">Name *</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="name" name="name" placeholder="First Name" value="##val_name##" maxlength="100">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="name" class="col-sm-2 control-label">Surname *</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="surname" name="surname" placeholder="Surname Name" value="##val_surname##" maxlength="100">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-sm-2 control-label">Tel * (Only numbers)</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="tel" name="tel" placeholder="" value="##val_tel##" maxlength="32">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-sm-2 control-label">Email *</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="##val_email##" maxlength="100">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-sm-4 control-label">Password * (At least 8 characters)</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="password1" name="password1" value="" maxlength="32">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-sm-4 control-label">Password * (Repeat)</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="password2" name="password2" value="" maxlength="32">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer" maxlength="3">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10 col-sm-offset-2">
+						<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+					</div>
+				</div>
+
+				<input type="hidden" name="csrf" value="##csrf##" />
+
+			</form>
+	
